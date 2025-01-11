@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拼多多 砍一刀</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .explosion {
+            position: relative;
+            display: inline-block;
+            margin-top: 30px;
+            animation: shake 0.5s infinite;
+        }
+
+        .explosion img {
+            width: 150px;
+            height: 150px;
+            animation: spin 2s linear infinite;
+        }
+
+        .explosion span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5em;
+            font-weight: bold;
+            color: red;
+            text-shadow: 2px 2px 5px yellow;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            25% { transform: translate(-1px, -2px) rotate(-1deg); }
+            50% { transform: translate(-3px, 0px) rotate(1deg); }
+            75% { transform: translate(3px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -1px) rotate(-1deg); }
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        img {
+            margin-top: 20px;
+            border: 5px solid #fff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>拼多多 砍一刀助力 劉淑情 回家</h1>
+    
+    <div class="explosion">
+        <img src="explosion.png" alt="爆炸图标" />
+        <span>我要回家！！</span>
+    </div>
+
+    <p>掃碼直接助力：</p>
+    <img src="wx.jpg" alt="PDD 助力圖片" width="300" />
+</body>
+</html>
